@@ -39,4 +39,7 @@ end
 #turn
 def turn(board)
   puts "Please enter 1-9:"
+  until valid_move? == turn
+    turn(board)
+  end
 end
